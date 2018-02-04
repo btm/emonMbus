@@ -23,7 +23,9 @@ Some assembly required...
 - Spire Metering Technologies [280T-S Ultrasonic Heat Meter](https://www.spiremt.com/ultrasonic-heat-meter-280t.html)  
   The Shenitech/SpireMT 280T appears to be an ancestor of the 280T-S and is likely compatible from the documentation I've seen.
   The meter is designed to measure consumption but the supply and return sensors can be swapped to measure production.
-
+- Air to Water Heat Pump  
+  I have one of [these](https://www.heatingstuffllc.com/store/?model_number=HP95).
+  
 ## Resources
 - The Meter Bus (M-Bus) [documentation](http://www.m-bus.com/mbusdoc/default.php) is essential
 - OpenEnergyMonitor Heatpump Monitor [build guide](https://github.com/openenergymonitor/HeatpumpMonitor/blob/master/heatpumpmonitor_build.md)
@@ -35,10 +37,10 @@ You'll need the [CustomSoftwareSerial](https://github.com/ledongthuc/CustomSoftw
 
 OpenEnergyMonitor has been exploring a number of hardware configurations to add an M-Bus master circuit to, from a emonPi replacement to an addon to the emonTx. I decided that this configuration was the best way I could produce firmware that someone else might make use of. There's some refactoring to do to support other meters, but contributions are welcome.
 
-## License
+### License
 The OpenEnergyMonitor firmware is licensed [GPLv3](LICENSE), and this is a derivative, so this is as well.
 
-Copyright 2018, Bryan McLellan
+Copyright 2018, Bryan McLellan <btm@loftninjas.org>
 
 ---
 

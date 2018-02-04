@@ -84,13 +84,6 @@ bool mbus_get_response(byte *pdata, unsigned char len_pdata) {
   }
 }
 
-unsigned concatenate(unsigned x, unsigned y) {
-    unsigned pow = 10;
-    while(y >= pow)
-        pow *= 10;
-    return x * pow + y;        
-}
-
 // Spire 280T-S returns decimal values as hex, right to left for multi-byte values
 // start_byte is first data byte / most significant data byte
 long get_spire_value(byte *pdata, unsigned int start_byte, unsigned char num_bytes) {

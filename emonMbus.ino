@@ -2,7 +2,7 @@
  * emoncms mbus node
  * Based on OpenEnergyMonitor code by Trystan Lea, Glyn Hudson, and others
  * https://github.com/openenergymonitor/HeatpumpMonitor
- * Copyright 2018 Bryan McLellan <btm@loftninjas.org>
+ * Copyright 2018, Bryan McLellan <btm@loftninjas.org>
  * License: GPLv3 https://www.gnu.org/licenses/gpl.txt
  */
 
@@ -39,7 +39,6 @@ bool firstrun = true;
     nodename = emonmbus
     [[[rx]]]
        names = energy, flow, power, flowrate, supplyT, returnT
-       datacodes = l,l,l,l,h,h
        scales = 1,1,1,1,0.01,0.01
        units = kW,kW,m,mm,C,C
  */
